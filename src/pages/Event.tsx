@@ -14,7 +14,7 @@ export function Event(){
             <main className="flex flex-1">
                 {slug
                 ? <Video lessonSlug={slug}/> 
-                : <div className="flex-1 text- text-center text-blue-500 font-bold text-4xl items-center mt-4 ">
+                : <div className="flex-1 text- text-center text-blue-500 font-bold text-2xl lg:text-4xl items-center mt-4 ">
                     <span >
                     Selecione uma aula a direita
                     </span>

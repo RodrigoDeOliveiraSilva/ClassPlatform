@@ -1,5 +1,7 @@
+import { DesktopTower, DeviceMobile, EnvelopeOpen, FileCode, FileDoc, GoogleLogo, MicrosoftExcelLogo } from "phosphor-react";
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
+import { FrameSubscriber } from "../components/FrameSubscriber";
 import { Logo } from "../components/Logo";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
@@ -29,20 +31,20 @@ export function Subscribe() {
 
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
-            <div className=" w-full max-w-[1100px]  flex items-center justify-between mt-20 mx-auto">
+            <div className=" w-full max-w-[1100px]  lg:flex items-center justify-between sm:mt-4 lg:mt-20 mx-auto">
 
-                <div className="max-w-[640px]">
+                <div className="mt-4 p-4 lg:p-8 lg: max-w-[640px] text-center  ">
                     <Logo />
-                    <h1 className="mt-8 text-[2.5rem] leading-tight">
-                        <strong className="text-blue-500">Aprendar</strong>  Diversas Ferramentas <strong className="text-blue-500">Gratuitamente </strong>
+                    <h1 className=" mt-4 lg:mt-8 lg:text-[2.5rem] text-[1.9rem]  leading-tight uppercase">
+                        Aprenda Ferramentas <strong className="text-blue-500">Gratuitamente </strong> de uma maneira divertida
                     </h1>
-                    <p className="mt-4 text-gray-200 leading-relaxed">
-                        Uma maneira diferente de apreder
+                    <p className="mt-4 text-gray-200 leading-relaxed text-sm">
+                        Uma forma diferente de aprender, com projetos reais.
                     </p>
                 </div>
 
                 <div className="p-8 bg-gray-700 borer border-gray-500 rounded">
-                    <strong className="text-2xl mb-6 block">
+                    <strong className="lg:text-2xl text-lg mb-6 block">
                         Inscreva-se Gratuitamente
 
                         <form onSubmit={handleSubscribe} className="flex flex-col gap-2 w-full">
@@ -71,8 +73,35 @@ export function Subscribe() {
                 </div>
 
             </div>
+            <div className=" w-full">
+                <FrameSubscriber />
+                
+            </div>
 
-            <img src="/src/assets/code-mockup.png" alt="painel do fundo" className="mt-10" />
+            <div className="  display: flex w-full animate-rotagem gp-6 space-x-16">
+                
+                <MicrosoftExcelLogo size={70} color='blue' />
+                
+                <GoogleLogo size={70} color='blue'  />  
+                
+                <DesktopTower size={70} color='blue'/>
+
+                <DeviceMobile size={70} color='blue'/>
+
+                <EnvelopeOpen size={70} color='blue' />
+
+                <FileDoc size={70} color='blue'/>
+
+                <FileCode size={70} color='blue' />
+                
+               
+            </div>
+                
+           
+            
+
+            
+          
         </div>
     )
 }

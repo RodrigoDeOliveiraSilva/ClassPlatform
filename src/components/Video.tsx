@@ -33,8 +33,19 @@ export function Video( props: VideoProps){
 
     if(!data || !data.lesson){
         return(
-            <div className='flex-1'>
-               <p>Carregando...</p> 
+            <div className='flex-1 flex justify-center '  >
+            <p id='loading_carregando' className=" h-24 w-24 border-8  
+            border-l-gray-200 
+            border-r-gray-200
+             border-t-blue-700 
+             animate-spin 
+             ease-linear 
+             rounded-full 
+             gap-8
+             absolute
+             top-2/4
+            ">  
+            </p> 
             </div>
             
         )

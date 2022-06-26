@@ -1,3 +1,5 @@
+const { isIdentifierOrPrivateIdentifier } = require('typescript');
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -5,6 +7,15 @@ module.exports = {
   ],
   theme: {
     extend: {
+      keyframes: {
+        rotagem: {
+          '0%, 100%': { transform: 'translate()' },
+          '100%': { transform: 'translate(100%)' },
+        }
+      },
+      animation: {
+        rotagem: 'rotagem 4s linear infinite',
+      },
       backgroundImage:{
         blur:'url(/src/assets/blur-background.png)'
       },
