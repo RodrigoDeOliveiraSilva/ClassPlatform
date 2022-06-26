@@ -79,20 +79,22 @@ export function Subscribe() {
             </div>
 
             <div className="  display: flex w-full  gp-6 space-x-16">
+
                 
-                <MicrosoftExcelLogo size={`20%`} color='blue' />
                 
-                <GoogleLogo size={`20%`} color='blue'  />  
+                <MicrosoftExcelLogo size={200} color='blue' />
                 
-                <DesktopTower size={`20%`} color='blue'/>
+                <GoogleLogo size={200} color='blue'  />  
+                
+                <DesktopTower size={200} color='blue'/>
 
-                <DeviceMobile size={`20%`} color='blue'/>
+                <DeviceMobile size={200} color='blue'/>
 
-                <EnvelopeOpen size={`20%`} color='blue' />
+                <EnvelopeOpen size={200} color='blue' />
 
-                <FileDoc size={`20%`} color='blue'/>
+                <FileDoc size={200} color='blue'/>
 
-                <FileCode size={`20%`} color='blue' />
+                <FileCode size={200} color='blue' />
                 
                
             </div>
