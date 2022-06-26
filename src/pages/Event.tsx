@@ -19,7 +19,7 @@ export function Event(){
                     Selecione uma aula a direita
                     </span>
                     
-                    <ArrowFatRight size={`20%`} className=" w-full flex " />
+                    <ArrowFatRight size={200} className=" w-full flex " />
                 </div>}
                 <Sidebar/> 
             </main>
