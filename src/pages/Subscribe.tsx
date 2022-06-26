@@ -80,19 +80,19 @@ export function Subscribe() {
 
             <div className="  display: flex w-full animate-rotagem gp-6 space-x-16">
                 
-                <MicrosoftExcelLogo size={70} color='blue' />
+                <MicrosoftExcelLogo size={`20%`} color='blue' />
                 
-                <GoogleLogo size={70} color='blue'  />  
+                <GoogleLogo size={`20%`} color='blue'  />  
                 
-                <DesktopTower size={70} color='blue'/>
+                <DesktopTower size={`20%`} color='blue'/>
 
-                <DeviceMobile size={70} color='blue'/>
+                <DeviceMobile size={`20%`} color='blue'/>
 
-                <EnvelopeOpen size={70} color='blue' />
+                <EnvelopeOpen size={`20%`} color='blue' />
 
-                <FileDoc size={70} color='blue'/>
+                <FileDoc size={`20%`} color='blue'/>
 
-                <FileCode size={70} color='blue' />
+                <FileCode size={`20%`} color='blue' />
                 
                
             </div>
