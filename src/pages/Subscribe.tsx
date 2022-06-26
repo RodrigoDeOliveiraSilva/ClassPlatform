@@ -78,7 +78,7 @@ export function Subscribe() {
                 
             </div>
 
-            <div className="  display: flex w-full animate-rotagem gp-6 space-x-16">
+            <div className="  display: flex w-full  gp-6 space-x-16">
                 
                 <MicrosoftExcelLogo size={`20%`} color='blue' />
                 
