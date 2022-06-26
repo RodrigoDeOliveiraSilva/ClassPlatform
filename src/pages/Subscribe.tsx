@@ -2,7 +2,9 @@ import { DesktopTower, DeviceMobile, EnvelopeOpen, FileCode, FileDoc, GoogleLogo
 import { useState, FormEvent } from "react";
 import { useNavigate } from "react-router-dom";
 import { FrameSubscriber } from "../components/FrameSubscriber";
+import { Header } from "../components/Header";
 import { Logo } from "../components/Logo";
+import { Rocketseat } from "../components/patronicios/Rocketseat";
 import { useCreateSubscriberMutation } from "../graphql/generated";
 
 
@@ -31,10 +33,11 @@ export function Subscribe() {
 
     return (
         <div className="min-h-screen bg-blur bg-cover bg-no-repeat flex flex-col items-center">
+            <Header/>
             <div className=" w-full max-w-[1100px]  lg:flex items-center justify-between sm:mt-4 lg:mt-20 mx-auto">
 
                 <div className="mt-4 p-4 lg:p-8 lg: max-w-[640px] text-center  ">
-                    <Logo />
+                    
                     <h1 className=" mt-4 lg:mt-8 lg:text-[2.5rem] text-[1.9rem]  leading-tight uppercase">
                         Aprenda Ferramentas <strong className="text-blue-500">Gratuitamente </strong> de uma maneira divertida
                     </h1>
@@ -97,6 +100,13 @@ export function Subscribe() {
                 <FileCode size={200} color='blue' />
                 
                
+            </div>
+
+            <div>
+              <span className="lg:text-2xl text-lg mt-8 text-left ">
+              Patrocínios:
+              </span>
+                <Rocketseat/>
             </div>
                 
            
